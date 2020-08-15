@@ -1,0 +1,1 @@
+web: gunicrom nik_blogs.wsgi --log-file -
