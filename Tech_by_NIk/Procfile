@@ -1,0 +1,1 @@
+web: gunicorn nik_blogs.wsgi --log-file -

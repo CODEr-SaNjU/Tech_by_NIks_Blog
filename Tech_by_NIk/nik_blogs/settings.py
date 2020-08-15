@@ -121,18 +121,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images) 
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,"live-static","media-root")
-
-
+STATIC_ROOT = os.path.join(BASE_DIR,"live-static","static-root")
 STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR,'static'),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR,"live-static","static-root")
+
+MEDIA_ROOT = os.path.join(BASE_DIR,"live-static","media-root")
+MEDIA_URL = '/media/'
+
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-
-
 django_heroku.settings(locals())
