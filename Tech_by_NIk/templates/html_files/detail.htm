@@ -1,0 +1,122 @@
+{% extends "html_files/main.htm" %}
+
+
+{% load static %}
+
+<link href="/static/Css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<body>
+{% block content %}
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 8px 2px;
+}
+
+
+
+
+.fa-whatsapp {
+  background: #70e958;
+  color: white;
+}
+</style>
+
+<div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-6">{{post.title}}</h1>
+
+        <!-- Author -->
+        <hr>
+        <p class="lead">
+          By
+          <a href="#">{{post.author}}</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>{{post.published_date}}
+            <a href="https://www.facebook.com/codesession.me/" class="fa fa-facebook" style="
+            background: #3B5998;opacity: 0.7;
+            color: white;"></a>
+            <a href="https://twitter.com/TECHBYNIK1" class="fa fa-twitter" style="
+            background: #55ACEE;opacity: 0.7;
+            color: white";></a>
+            <a href="https://hidden-taiga-33691.herokuapp.com/" class="fa fa-google" style="background: #bb0000;
+            color: white; opacity: 0.7;"></a>
+            <a href="https://www.instagram.com/techbynik.com_/" class="fa fa-instagram" style="
+            background: #125688;opacity: 0.7;
+            color: white;"></a>
+        </p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img src="{{post.images.url}}" class="img-fluid" alt="Responsive image" style="width: 50%;" >
+        <hr>
+        {% for p in photos %}
+        <div class="card-img {% if foorloop.counter0 == 1 %} active {% endif %}">
+            <img src="{{p.image.url}}" class="img-fluid" alt="Responsive image" style="width: 50%;" >
+            <hr>
+            <h4><p>{{post.text}}</p></h4>
+         </div>
+         {% endfor %}
+        <hr>
+        <!-- Post Content -->
+        <p class="lead">
+           <h4><p>{{post.text}}</p></h4>
+        </p>
+      <hr>
+      </div>
+      <div class="col-lg-4">
+        <hr>
+        <h1 style="text-align: center;">Recent Post</h1>
+        {%for post in post_data%}
+        <hr>
+         {{forloop.counter}}.&nbsp;<a href="{% url 'DetalView' post.id %}">{{post.title}}</a>
+         {% endfor %}
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+
+
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div class=" card border-secondary col-md-10" style="margin:4rem;">
+         {% for p in photos %}
+            <div class="card-content">
+               <div class="card-header">
+                   <span><h2 style="text-align: initial;" >Blog Title:{{post.title}}</h2></span>
+                  <h1>Blog Author :{{post.author}}</h1>
+               </div>
+                <div class="card-img {% if foorloop.counter0 == 1 %} active {% endif %}">
+                  <img src="{{p.image.url}}" class="img-fluid" alt="Responsive image" >
+                </div>
+                <div class="card-footer" style=" padding: 20px;">
+                    <h4>{{post.text}}</br></h4>
+                </div>
+            </div>    
+        {% endfor %}
+        </div>
+    </div>
+</div> -->
+{% endblock %}
+</body>

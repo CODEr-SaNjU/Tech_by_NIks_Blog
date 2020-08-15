@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Nik Blogs</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- {% load static %} -->
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Optional theme -->
+		
+    <link href="/static/Css/" rel="stylesheet">
+    <link href="/static/Css/header.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <div class="container">
+            <header role="banner">
+                <div class="row row-with-vspace site-branding">
+                    <div class="col-sm-2  site-title">
+                        <h5 class="site-title-heading">
+                            <a href="{% url 'index' %}" title="Tech By Nik" rel="home"><img src="/static/image/logo.jpg" class="img-responsive home" border="0" style=" border-radius: 50%;
+                                width: 100px;
+                                height: 100px;
+                                padding: 5px;" ></a>
+                        </h5>
+                    </div><!-- Close col sm2-->
+                    <div class="col-sm-10 page-header-top-right">
+                        <div class="site-description">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h1 style="    margin-top: 50px;
+                                    margin-bottom: -64px">Tech By Nik Blog</h1><br>
+                                </div> <!-- Close col sm8-->
+                                <div class="col-sm-4">  
+                                    <div class="pull-right">
+                                        <div id="simple-social-icons-1" class="widget simple-social-icons">
+                                            <ul class="social-network social-circle">
+                                                <li><a href="https://www.instagram.com/techbynik.com_/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="https://www.facebook.com/codesession.me/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://twitter.com/TECHBYNIK1" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://hidden-taiga-33691.herokuapp.com/" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                                                <!-- <li><a href="#" class="https://www.linkedin.com/in/sanju-saini-246580154/"><i class="fa fa-linkedin"></i></a></li> -->
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- Close col sm4-->
+                            </div><!-- Close col row-->
+                        </div><!-- Close col site description-->
+                        <div class="row main-navigation">
+                            <div class="col-md-12">
+                                <nav class="navbar navbar-default" role="navigatio">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="collapse navbar-collapse navbar-primary-collapse pull-right">
+                                        <ul id="menu-main-menu" class="nav navbar-nav">
+                                            <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="{% url 'index' %}">Home</a></li>
+                                            <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="{% url 'Blogs' %}">Blogs</a></li>
+                                            <li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="{% url 'About' %}">About</a></li>
+                                            <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="{% url 'Contact' %}">Contact</a></li>
+                                            <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4">
+                                                <form class="form-inline right">
+                                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                                    &nbsp;
+                                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                                </form>
+                                            </li>
+                                        </ul> 
+                                    </div><!--.navbar-collapse-->
+                                </nav>
+                            </div>
+                        </div><!--.main-navigation-->
+                    </div>
+                </div><!--row .site-branding-->
+            </header>
+        </div><!--.container-->
+    </div><!--.header-wrapper-->
+{% block content %}
+
+{% endblock %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

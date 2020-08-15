@@ -1,0 +1,182 @@
+.header-wrapper{
+
+    background: #f5f5f5; 
+    width: 100%; }
+    div.site-description div.row div.col-sm-4 div.pull-right div#simple-social-icons-3.widget.simple-social-icons{ margin-top: 5px;}
+    
+    @media (min-width: 768px) {
+    .navbar-left {
+        float: left !important;
+    }
+    .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+    }
+    .navbar-right ~ .navbar-right {
+        margin-right: 0;
+    }
+    .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+        background-color: #00AAD4;
+        background-image: linear-gradient(to bottom, #00AAD4 0px, #00AAD4 100%);
+        background-repeat: repeat-x;
+    }
+    }
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .navbar-default .navbar-brand {color: #00AAD4;
+    }
+    .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+        background-color: transparent;
+        color: #5e5e5e;
+    }
+    .navbar-default .navbar-text {color: #00AAD4;
+    }
+    
+    .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+        background-color: transparent;
+        color: #333;
+    }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+        background-color: #00AAD4;
+        color: #fff;
+    }
+    .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default .navbar-nav > .disabled > a:hover {
+        background-color: transparent;
+        color: #ccc;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #00AAD4;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: #ddd;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #00AAD4;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+              border-color: transparent;
+    }
+    .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+          border-color: transparent;
+        color: #555;
+    }
+    @media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #00AAD4;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        background-color: transparent;
+        color: #333;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
+        background-color: #e7e7e7;
+        color: #555;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover {
+        background-color: transparent;
+        color: #ccc;
+    }
+    .navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover {
+        background-image: linear-gradient(to bottom, #000 0px, #00AAD4 100%);
+        background-repeat: repeat-x;
+        color: #fff;
+    }
+    }
+    .navbar-default .navbar-nav > li > a {color: #00AAD4;
+     text-transform: uppercase; font-size: 12px;}
+    .navbar-default {
+        background-image: linear-gradient(to bottom, transparent 0px, transparent 100%);
+        background-repeat: repeat-x;
+        border-radius: 0px;
+        box-shadow: 0 0px 0 rgba(255, 255, 255, 0.15) inset, 0 0px 0px rgba(0, 0, 0, 0.075);
+    }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+       background-image: linear-gradient(to bottom, transparent 0px, transparent 100%);
+        background-repeat: repeat-x;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset;
+    }
+    .navbar-brand, .navbar-nav > li > a {
+        text-shadow: 0 0px 0 rgba(255, 255, 255, 0.25);
+    }
+    @font-face {
+        font-family: "ssi-icomoon";
+        font-style: normal;
+        font-weight: normal;
+        src: url("../font/ssi-icomoon.eot?#iefixssi-texv9a") format("embedded-opentype"), url("../font/ssi-icomoon.woff?ssi-texv9a") format("woff"), url("../font/ssi-icomoon.ttf?ssi-texv9a") format("truetype"), url("../font/ssi-icomoon.svg?ssi-texv9a#ssi-icomoon") format("svg");
+    }
+    ul.social-network {
+        list-style: none;
+        display: inline;
+        margin-left:0 !important;
+        padding: 0;
+    }
+    ul.social-network li {
+        display: inline;
+        margin: 0 5px;
+    }
+    
+    .social-network a.icoInstagram:hover {
+        background-color: orangered;
+    }
+    .social-network a.icoFacebook:hover {
+        background-color:#3B5998;
+    }
+    .social-network a.icoTwitter:hover {
+        background-color:#33ccff;
+    }
+    .social-network a.icoGoogle:hover {
+        background-color:#BD3518;
+    }
+    .social-network a.icoVimeo:hover {
+        background-color:#0590B8;
+    }
+    .social-network a.icoLinkedin:hover {
+        background-color:#007bb7;
+    }
+    .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+    .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+        color:#fff;
+    }
+    a.socialIcon:hover, .socialHoverClass {
+        color:#44BCDD;
+    }
+    
+    .social-circle li a {
+        display:inline-block;
+        position:relative;
+        margin:0 auto 0 auto;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        border-radius:50%;
+        text-align:center;
+        width: 20px;
+        height: 20px;
+        font-size:10px;
+        background-color: #D3D3D3;
+    }
+    .social-circle li i {
+        margin:0;
+        line-height:50px;
+        text-align: center;
+    }
+    
+    .social-circle li a:hover i, .triggeredHover {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .social-circle i {
+        color: #fff;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
+    }

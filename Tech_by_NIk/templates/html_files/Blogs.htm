@@ -1,0 +1,38 @@
+{% extends "html_files/main.htm" %}
+
+
+{% load static %}
+
+<link href="/static/Css/style.css" rel="stylesheet">
+<l
+<body>
+{% block content %}
+
+<slidebar>
+    <div class="row">
+        {% for post in post %}
+        <div class="col-md-3" style="margin:1rem;">
+            <div class="card-content">
+                <div class="card-img">
+                    <img src="{{post.images.url}}" alt="" style="height: 200px;
+                    width: 100%;">
+                    <span><h6>{{post.title}}</h6></span>
+                </div>
+                <div class="card-desc">
+                    <h4>{{post.title}}</h4>
+                </div>
+                <div class="card-footer">
+                    <p>{{post.text|safe|truncatewords:"8"|linebreaks }}</p>
+                        <a href="{% url 'DetalView' post.id %}" class="btn-card">Read</a>   
+                </div>
+                <hr>
+                <div>
+                    <p class="card-text"><small class="text-muted" style=" text-align: center;">Last updated {{post.published_date}}</small></p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</slidebar>
+{% endblock %}
+</body>
