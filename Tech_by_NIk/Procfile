@@ -1,1 +1,0 @@
-web: gunicorn niks_blogs_backend.wsgi --log-file -
