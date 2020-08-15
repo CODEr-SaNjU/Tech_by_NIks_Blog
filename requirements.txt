@@ -1,14 +1,12 @@
-Requirement already satisfied: whitenoise in /home/coder-sanju/.local/share/virtualenvs/Tech_by_NIks-BUOyyaME/lib/python3.8/site-packages (5.2.0)
-Requirement already satisfied: pip in /home/coder-sanju/.local/share/virtualenvs/Tech_by_NIks-BUOyyaME/lib/python3.8/site-packages (20.1.1)
-Collecting freeze
-  Downloading freeze-3.0.tar.gz (188 kB)
-Collecting six
-  Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
-Building wheels for collected packages: freeze
-  Building wheel for freeze (setup.py): started
-  Building wheel for freeze (setup.py): finished with status 'done'
-  Created wheel for freeze: filename=freeze-3.0-py3-none-any.whl size=12104 sha256=5c261e22762d360adb5a429522d4507d264a2eed6d041b8fab370643438a9b05
-  Stored in directory: /home/coder-sanju/.cache/pip/wheels/9b/c8/58/919fdda51f881bfbf09558405b721d511ea2dabd674127d508
-Successfully built freeze
-Installing collected packages: six, freeze
-Successfully installed freeze-3.0 six-1.15.0
+asgiref==3.2.10
+dj-database-url==0.5.0
+Django==3.1
+djangorestframework==3.11.1
+freeze==3.0
+gunicorn==20.0.4
+Pillow==7.2.0
+psycopg2-binary==2.8.5
+pytz==2020.1
+six==1.15.0
+sqlparse==0.3.1
+whitenoise==5.2.0

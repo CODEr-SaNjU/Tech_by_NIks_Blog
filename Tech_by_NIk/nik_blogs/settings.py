@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'niks_blogs_backend',
-    'rest_framework'
+    'rest_framework',
+    
 ]
 
 MIDDLEWARE = [
